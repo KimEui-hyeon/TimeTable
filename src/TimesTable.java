@@ -1,11 +1,18 @@
 import java.util.Scanner;
 
 public class TimesTable {
+	
 	public static void main(String[] args) {
-		int[] arr2 = new int [9];
-		for(int i=2;i<10;i++){
-			arr2 = TimesAtion.calc(i);
-			TimesAtion.print(arr2);
+		Scanner scanner = new Scanner(System.in);
+		String input = scanner.nextLine();
+		String[] splited = input.split(",");
+		int first = Integer.parseInt(splited[0]);
+		int second = Integer.parseInt(splited[1]);
+		
+		for(int i=2;i<=first;i++){
+			int[] arr = new int[second];
+			arr = TimesAtion.calc(i,second);
+			TimesAtion.print(arr);		
 		}
 	}
 }

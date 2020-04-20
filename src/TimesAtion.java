@@ -1,10 +1,10 @@
 
 public class TimesAtion {
 	//계산 메소드이다
-	public static int[] calc(int a) {
-		int [] arr  = new int[9];
+	public static int[] calc(int first,int value) {
+		int [] arr  = new int[value];
 		for(int i=0;i<arr.length;i++) {
-			arr[i] = a*(i+1);
+			arr[i] = first*(i+1);
 		}
 		return arr;	
 	}
